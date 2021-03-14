@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  justify-content: space-around;
+}
+
+main {
+  width: 70%;
+}
+p {
+  text-align: center;
+}
+thead {
+  background-color: lightgray;
+}
+tbody td:first-of-type,
+tbody td:last-of-type {
+  text-align: right;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Desafio 1</title>
+  </head>
+  <body>
+    <aside>
+      <h2>Options</h2>
+      <form>
+        <label for="sortBy">Sort by: </label>
+        <select name="sortBy" id="sortBy">
+          <option value="0" selected>Name (ascending)</option>
+          <option value="1">Name (descending)</option>
+          <option value="2">Salary (ascending)</option>
+          <option value="3">Salary (descending)</option>
+        </select>
+        <fieldset id="filterByRoles">
+          <legend>Filter by roles:</legend>
+        </fieldset>
+      </form>
+    </aside>
+    <main>
+      <h2>Employees (<span id="count">0</span>)</h2>
+      <section id="result"><p>0 results for the search.</p></section>
+    </main>
+    <script src="./fetch.js"></script>
+    <script src="./handleFunctions.js"></script>
+    <script src="./createElements.js"></script>
+  </body>
+</html>
