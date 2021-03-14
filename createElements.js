@@ -21,9 +21,9 @@ function updateTable(employees, roles) {
     const trHeadElement = document.createElement('tr');
     theadElement.appendChild(trHeadElement);
     ['ID', 'Name', 'Role', 'Salary (R$)'].map((element) => {
-      const tdElement = document.createElement('td');
-      tdElement.innerHTML = element;
-      trHeadElement.appendChild(tdElement);
+      const thElement = document.createElement('th');
+      thElement.innerHTML = element;
+      trHeadElement.appendChild(thElement);
     });
     //Body
     const tbodyElement = document.createElement('tbody');
