@@ -18,11 +18,11 @@ function sortBy(value) {
       break;
     //Salary ascending
     case 2:
-      currentEmployees = currentEmployees.sort((a, b) => b.salary - a.salary);
+      currentEmployees = currentEmployees.sort((a, b) => a.salary - b.salary);
       break;
     //Salary descending
     case 3:
-      currentEmployees = currentEmployees.sort((a, b) => a.salary - b.salary);
+      currentEmployees = currentEmployees.sort((a, b) => b.salary - a.salary);
       break;
   }
   updateTable(currentEmployees, roles);
